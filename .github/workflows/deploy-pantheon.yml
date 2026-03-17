@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       # Deploy to Pantheon
       - name: Deploy to Pantheon
         uses: 10up/pantheon-wp-deploy-action@v1
