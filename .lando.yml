@@ -1,0 +1,6 @@
+name: losifer
+recipe: pantheon
+config:
+  framework: wordpress
+  site: losifer
+  id: 8e087afc-6fa8-4301-a6e6-7e2c08774c00
