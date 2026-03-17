@@ -1,0 +1,23 @@
+name: Deploy to Pantheon
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy site to Pantheon
+    runs-on: ubuntu-latest
+
+    steps:
+      # Deploy to Pantheon
+      - name: Deploy to Pantheon
+        uses: 10up/pantheon-wp-deploy-action@v1
+        with:
+          pantheon_git_url: "${{ secrets.PANTHEON_GIT_URL }}"
+          ssh_private_key: "${{ secrets.PRIVATE_KEY }}"
+          site_name: "losifer"
+          wordpress_version: "6.9.1"
+          working_dir: "./"
+          root_files: "pantheon.yml wp-config.php"
