@@ -1,4 +1,4 @@
-name: Losifer
+name: losifer
 recipe: pantheon
 config:
   framework: wordpress
