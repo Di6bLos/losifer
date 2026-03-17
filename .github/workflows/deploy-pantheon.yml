@@ -20,6 +20,7 @@ jobs:
         with:
           pantheon_git_url: "${{ secrets.PANTHEON_GIT_URL }}"
           ssh_private_key: "${{ secrets.PRIVATE_KEY }}"
+          terminus_token: "${{ secrets.TERMINUS_TOKEN }}"
           site_name: "losifer"
           wordpress_version: "6.9.1"
           root_files: "pantheon.yml wp-config.php"
