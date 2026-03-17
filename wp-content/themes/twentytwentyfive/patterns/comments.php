@@ -5,6 +5,7 @@
  * Description: Comments area with comments list, pagination, and comment form.
  * Categories: text
  * Block Types: core/comments
+ * Deployment Status: active
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
